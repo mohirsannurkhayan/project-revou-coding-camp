@@ -2,7 +2,8 @@
 
 A simple productivity dashboard built with **HTML**, **CSS**, and **Vanilla JavaScript** — no frameworks, no backend, just open and use.
 
-![Light Mode](https://via.placeholder.com/900x400?text=Dashboard+Preview+%E2%80%94+Light+Mode)
+<img width="1919" height="1020" alt="image" src="https://github.com/user-attachments/assets/de771d1a-d1e6-40d3-81a7-84fddfc3c742" />
+
 
 ---
 
