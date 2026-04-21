@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Life Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER: Greeting -->
+  <header class="greeting-section">
+    <div class="greeting-top">
+      <div>
+        <p id="datetime" class="datetime"></p>
+        <h1 id="greeting-text" class="greeting-text">Selamat datang!</h1>
+      </div>
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn-icon" title="Toggle tema">🌙</button>
+        <button id="edit-name-btn" class="btn-icon" title="Ubah nama">✏️</button>
+      </div>
+    </div>
+
+    <!-- Name Modal -->
+    <div id="name-modal" class="modal hidden">
+      <div class="modal-box">
+        <h2>Siapa namamu?</h2>
+        <input id="name-input" type="text" placeholder="Masukkan nama..." maxlength="30" />
+        <div class="modal-actions">
+          <button id="save-name-btn" class="btn btn-primary">Simpan</button>
+          <button id="cancel-name-btn" class="btn btn-secondary">Batal</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard">
+
+    <!-- FOCUS TIMER -->
+    <section class="card timer-card">
+      <h2 class="card-title">⏱ Focus Timer</h2>
+      <div id="timer-display" class="timer-display">25:00</div>
+      <div class="timer-controls">
+        <button id="timer-start" class="btn btn-primary">Mulai</button>
+        <button id="timer-stop" class="btn btn-secondary">Stop</button>
+        <button id="timer-reset" class="btn btn-ghost">Reset</button>
+      </div>
+    </section>
+
+    <!-- TO-DO LIST -->
+    <section class="card todo-card">
+      <h2 class="card-title">📝 To-Do List</h2>
+      <div class="todo-input-row">
+        <input id="todo-input" type="text" placeholder="Tambah tugas baru..." maxlength="100" />
+        <button id="todo-add-btn" class="btn btn-primary">Tambah</button>
+      </div>
+      <p id="todo-error" class="error-msg hidden">Tugas sudah ada!</p>
+      <ul id="todo-list" class="todo-list"></ul>
+    </section>
+
+    <!-- QUICK LINKS -->
+    <section class="card links-card">
+      <h2 class="card-title">🔗 Quick Links</h2>
+      <div class="links-input-row">
+        <input id="link-name-input" type="text" placeholder="Nama link..." maxlength="30" />
+        <input id="link-url-input" type="url" placeholder="https://..." maxlength="200" />
+        <button id="link-add-btn" class="btn btn-primary">Tambah</button>
+      </div>
+      <p id="link-error" class="error-msg hidden">URL tidak valid!</p>
+      <div id="links-container" class="links-container"></div>
+    </section>
+
+  </main>
+
+  <!-- Edit Task Modal -->
+  <div id="edit-modal" class="modal hidden">
+    <div class="modal-box">
+      <h2>Edit Tugas</h2>
+      <input id="edit-input" type="text" maxlength="100" />
+      <div class="modal-actions">
+        <button id="save-edit-btn" class="btn btn-primary">Simpan</button>
+        <button id="cancel-edit-btn" class="btn btn-secondary">Batal</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
