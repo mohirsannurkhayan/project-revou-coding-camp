@@ -71,7 +71,7 @@ No installation or build step required.
 
 1. Clone or download this repository
    ```bash
-   git clone [https://github.com/your-username/to-do-list-life-dashboard](https://github.com/mohirsannurkhayan/project-revou-coding-camp).git
+   git clone https://github.com/mohirsannurkhayan/project-revou-coding-camp.git
    ```
 2. Open `index.html` in any modern browser
    ```
