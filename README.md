@@ -114,7 +114,3 @@ No installation or build step required.
 - [x] Prevent duplicate tasks
 
 ---
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
